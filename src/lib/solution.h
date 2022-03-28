@@ -3,6 +3,8 @@
 
 #include <string>
 #include <vector>
+#include <cstring>
+#include <cstdint>
 
 typedef struct list_node node_t;
 struct list_node {
