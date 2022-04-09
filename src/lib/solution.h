@@ -27,11 +27,15 @@ struct custom_list {
 
 class Custom_list_lib {
 public:
-  void display_list_integers(list_t *list_ptr);
+  void list_integers_display(list_t *list_ptr);
   void list_nodes_init(list_t *list_ptr);
-  void prepend_node(list_t *list_ptr, void *node_val_ptr);
-  void append_node(list_t *list_ptr, void *node_val_ptr);
-  void create_list_nodes(list_t *list_ptr, void *vector_ptr, unsigned int num_items, int each_item_size);
+  bool list_is_empty(list_t *list_ptr);
+  unsigned int list_size_get(list_t *list_ptr);
+  void list_node_prepend(list_t *list_ptr, void *node_val_ptr);
+  void list_node_append(list_t *list_ptr, void *node_val_ptr);
+  void list_nodes_add_before_head(list_t *list_ptr, void *array_ptr, unsigned int num_items);
+  void list_nodes_add_after_tail(list_t *list_ptr, void *array_ptr, unsigned int num_items);
+  void list_nodes_create_and_add(list_t *list_ptr, void *array_ptr, unsigned int num_items, int each_item_size);
 };
 
 #endif
