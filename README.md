@@ -2,6 +2,8 @@
 
 > Can be used in Visual Studio Code
 
+A doubly linked list that can store heterogeneous datatype in the list nodes. 
+
 You can use this library for most of your C++ projects without the need for changing the BUILD files.
 
 ## Installation
@@ -30,7 +32,7 @@ bazel test tests:tests
 
 ## Directory Structure
 
-![Directory Structure](https://github.com/ourarash/cpp-template/blob/master/tree.png?raw=true | width = 100)
+[Directory Structure](https://github.com/ourarash/cpp-template/blob/master/tree.png?raw=true | width = 100)
 
 ## Installing Bazel
 
