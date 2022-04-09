@@ -5,6 +5,7 @@
 #include <vector>
 #include <cstring>
 #include <cstdint>
+#include <iostream>
 
 typedef struct list_node node_t;
 struct list_node {
@@ -26,9 +27,11 @@ struct custom_list {
 
 class Custom_list_lib {
 public:
+  void display_list_integers(list_t *list_ptr);
   void list_nodes_init(list_t *list_ptr);
+  void prepend_node(list_t *list_ptr, void *node_val_ptr);
   void append_node(list_t *list_ptr, void *node_val_ptr);
-  void create_list(list_t *list_ptr, void *vector_ptr, unsigned int num_items, int each_item_size);
+  void create_list_nodes(list_t *list_ptr, void *vector_ptr, unsigned int num_items, int each_item_size);
 };
 
 #endif
