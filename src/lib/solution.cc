@@ -61,7 +61,7 @@ void Custom_list_lib::list_nodes_create_and_add(list_t *list_ptr, void *vector_p
   for (unsigned int i = 0; i < num_items; i++) {
     char *item_val_ptr = new char[each_item_size];
     std::memcpy(item_val_ptr, ((char*)vector_ptr + i*each_item_size), sizeof(char)*each_item_size);
-    list_node_append(list_ptr, (void*)item_val_ptr);
+    list_node_append(list_ptr, item_val_ptr);
   }
 }
 
